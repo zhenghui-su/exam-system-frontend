@@ -1,6 +1,5 @@
-import { Button, Form, Input, Modal, message } from 'antd';
+import { Form, Input, Modal, message } from 'antd';
 import { useForm } from 'antd/es/form/Form';
-import TextArea from 'antd/es/input/TextArea';
 import { examAdd } from '../../interfaces';
 
 interface ExamAddModalProps {

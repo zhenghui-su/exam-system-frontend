@@ -1,4 +1,7 @@
-import axios, { type AxiosResponse } from 'axios';
+import axios, {
+	type AxiosResponse,
+	type InternalAxiosRequestConfig,
+} from 'axios';
 import type { RegisterUser } from '../pages/Register';
 import type { UpdatePassword } from '../pages/UpdatePassword';
 import { message } from 'antd';
@@ -67,7 +70,7 @@ const responseErrorIntercepor = async (error: any) => {
 	if (!error.response) {
 		return Promise.reject(error);
 	}
-	let { data } = error.response;
+	const { data } = error.response;
 	if (data.statusCode === 401) {
 		message.error(data.message);
 
