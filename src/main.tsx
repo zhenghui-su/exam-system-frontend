@@ -4,11 +4,12 @@ import { Register } from './pages/Register';
 import { Login } from './pages/Login';
 import { UpdatePassword } from './pages/UpdatePassword';
 import '@ant-design/v5-patch-for-react-19';
+import { ExamList } from './pages/ExamList/index';
 
 const routes = [
 	{
 		path: '/',
-		element: <div>index</div>,
+		element: <ExamList />,
 	},
 	{
 		path: 'login',
