@@ -175,6 +175,7 @@ export function Edit() {
 				</div>
 				<div
 					className='edit-area'
+					// @ts-ignore
 					ref={drop}
 					style={isOver ? { border: '2px solid blue' } : {}}
 				>

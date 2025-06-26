@@ -9,7 +9,11 @@ export function MaterialItem(props: { name: string; type: string }) {
 	});
 
 	return (
-		<div className='meterial-item' ref={drag}>
+		<div
+			className='meterial-item'
+			// @ts-ignore
+			ref={drag}
+		>
 			{props.name}
 		</div>
 	);
