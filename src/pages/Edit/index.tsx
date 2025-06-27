@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import './index.scss';
 import {
 	Button,
@@ -163,6 +163,9 @@ export function Edit() {
 						</Button>
 						<Button type='primary' onClick={saveExam}>
 							保存
+						</Button>
+						<Button type='default'>
+							<Link to='/'>返回</Link>
 						</Button>
 					</Space>
 				</div>
